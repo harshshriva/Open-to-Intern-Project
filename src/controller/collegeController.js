@@ -1,11 +1,12 @@
-const collegeModel = require('../model/collegeModel'); //import authorModel
-
+const collegeModel = require('../model/collegeModel'); //import collegeModel
 
 const isValid = function(value) {
     if (typeof value === 'undefined' || value === null) return false
     if (typeof value === 'string' && value.trim().length === 0) return false
     return true;
 }
+
+//================ create college one api =========================//
 
 const createCollege = async(req, res) => {
     try {
