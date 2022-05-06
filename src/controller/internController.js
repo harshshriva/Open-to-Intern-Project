@@ -10,6 +10,7 @@ let isValid = (value) => {
 let isValidObjectId = function(objectId) { return mongoose.Types.ObjectId.isValid(objectId) }
 
 //======================= Create Intern Document====================//
+
 const createInternDocument = async(req, res) => {
     try {
         let data = req.body;
@@ -72,10 +73,8 @@ const createInternDocument = async(req, res) => {
         return res.status(500).send({ status: false, msg: err.message });
     }
 };
-//===/^(?:(?:\+|0{0,2})91(\s*[\-]\s*)?|[0]?)?[6789]\d{9}$/
 
-
-///===============/Get College api/================//
+//===============/Get College api/================//
 
 const getCollegedatail = async(req, res) => {
     try {
