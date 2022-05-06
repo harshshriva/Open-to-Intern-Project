@@ -7,6 +7,7 @@ let isValid = (value) => {
     if (typeof value === "string" && value.trim().length === 0) return false;
     return true;
 };
+let isValidObjectId = function(objectId) { return mongoose.Types.ObjectId.isValid(objectId) }
 
 //======================= Create Intern Document====================//
 
