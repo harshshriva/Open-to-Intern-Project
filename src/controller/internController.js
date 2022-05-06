@@ -1,5 +1,5 @@
-const collegeModel = require('../model/collegeModel'); //import authorModel
-const internModel = require('../model/internModel'); //import authorModel
+const collegeModel = require('../model/collegeModel'); //import collegeModel
+const internModel = require('../model/internModel'); //import internModel
 const mongoose = require("mongoose");
 
 let isValid = (value) => {
